@@ -1,0 +1,26 @@
+.adjustOrder {
+    display: inline;
+}
+
+.adjustOrder input{
+    width: 30%;
+    height: 1.5rem;
+}
+
+.adjustOrder button {
+    margin-left: 5%;
+}
+
+.adjustOrder span{
+    margin: 5px;
+    font-size: 1.5rem;
+}
+.adjustOrder span:hover {
+    font-weight: bold;
+    cursor:pointer;
+}
+
+
+.BtnOrder{
+    margin-top: 10px;
+}

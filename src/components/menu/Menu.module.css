@@ -1,0 +1,41 @@
+.baseLayer{
+    padding-top: 5rem;
+}
+
+
+.containerMenu {
+    background-color: transparent;
+    height: 30rem;
+    color: #050503;
+    font-weight: bold;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2rem;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+}
+
+
+.containerMenuTitle {
+    font-weight: bold;
+    border-radius: 2rem;
+    font-size: 2rem;
+
+}
+
+.containerMenuMember {
+    display: flex;
+    border-radius: 2rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containerMenuMember:hover {
+    background-color: white;
+    color: rgb(136, 15, 15);
+    border: 1px solid rgb(136, 15, 15);
+}
