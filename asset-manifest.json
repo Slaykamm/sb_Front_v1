@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sb_Front_v1/static/css/main.fc8f1f65.css",
+    "main.js": "/sb_Front_v1/static/js/main.f682d340.js",
+    "static/media/flower-012.png": "/sb_Front_v1/static/media/flower-012.552fc85477ec0a9ce3fc.png",
+    "static/media/13.jpg": "/sb_Front_v1/static/media/13.ca73b11f8733cb625c50.jpg",
+    "index.html": "/sb_Front_v1/index.html",
+    "main.fc8f1f65.css.map": "/sb_Front_v1/static/css/main.fc8f1f65.css.map",
+    "main.f682d340.js.map": "/sb_Front_v1/static/js/main.f682d340.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc8f1f65.css",
+    "static/js/main.f682d340.js"
+  ]
+}
