@@ -10,8 +10,10 @@
     font-weight: bold;
     justify-content: center;
     display: grid;
-    grid-template-rows: 2rem;  
+    grid-template-columns: minmax(90%,100%);
+    grid-template-rows: 3rem;  
     font-family: Georgia, 'Times New Roman', Times, serif;
+
 
     
 }
@@ -20,17 +22,24 @@
 .containerMenuTitle {
     font-weight: bold;
     border-radius: 2rem;
-    font-size: 2rem;
-
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
+
 .containerMenuMember {
+    margin-top: 30px;
     display: flex;
     border-radius: 2rem;
     font-weight: lighter;
     font-size: 1.5rem;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    color: white;
 }
 
 

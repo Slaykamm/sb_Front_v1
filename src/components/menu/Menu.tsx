@@ -5,12 +5,12 @@ export default function Menu() {
   return (
     <div className={cl.containerMenu}>
 
-        <div className={cl.containerMenuTitle}>Menu</div>
-        <div className={cl.containerMenuMember}>Tobi</div>
-        <div className={cl.containerMenuMember}>Meni</div>
-        <div className={cl.containerMenuMember}>Eda</div>
-        <div className={cl.containerMenuMember}>Korzinka</div>
-        <div className={cl.containerMenuMember}>Vahod</div>
+        <div className={cl.containerMenuTitle}>Меню</div>
+        <div className={cl.containerMenuMember}>Новости Компании</div>
+        <div className={cl.containerMenuMember}>Мировые новости</div>
+        <div className={cl.containerMenuMember}>Корзина</div>
+        <div className={cl.containerMenuMember}>Как добраться</div>
+        <div className={cl.containerMenuMember}>Логин/Выход</div>
     </div>
     
     

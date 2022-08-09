@@ -1,0 +1,33 @@
+.MainLayer {
+    display: flex;
+    justify-content:center;
+    margin-left: 70%;
+    font-size: large;
+    width: 280px;
+    height: 35px;
+    border-radius: 2rem;
+    background: white;
+    color: rgb(136, 15, 15);
+    border: 1px solid rgb(136, 15, 15);
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+}
+
+
+.NavPanelContainer {
+    display: grid;
+    grid-template-columns: minmax(50px,70px) minmax(10px,10px) minmax(150px,170px);
+    justify-content: center;
+    align-items: center;
+}
+
+.NavPanelContainerPosition span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavPanelContainer span:hover{
+    font-weight: bold;
+}

@@ -1,19 +1,32 @@
+.adjustOrderContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
 .adjustOrder {
     display: inline;
+    width: 280px;
+    
+}
+
+.adjustOrderContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .adjustOrder input{
+    margin-top: 25px;
     width: 30%;
     height: 1.5rem;
 }
 
 .adjustOrder button {
-    margin-left: 5%;
 }
 
 .adjustOrder span{
-    margin: 5px;
-    font-size: 1.5rem;
+    margin: 15px;
+    font-size: 1.8rem;
 }
 .adjustOrder span:hover {
     font-weight: bold;

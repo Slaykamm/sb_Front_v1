@@ -27,28 +27,36 @@ export default function Product({product}: IproductProps) {
       setOrderRest(orderRest + 1)
     }     
   }
-  console.log('Order Amount', orderAmount)
+  const incrementOrder2 = () => {
+    console.log('Order Amount', orderAmount)
+  }
+
+
 
   return (
-    <div
-      className={cl.containerProduct}>
-        <h2>
-          {product?.title}
-        </h2>
-
-        <h4>
-          {product?.description}
-        </h4>
-        <AdjustOrder 
-          measurement={product.measurement} 
-          incrementOrder={incrementOrder} 
-          decrementOrder={decrementOrder} 
-          orderAmount={orderAmount}
-          />
-          
-          <h6
-          >Доступный остаток {orderRest + ' ' + product.measurement}</h6>
-
+    <div className={cl.containerProduct}>
+        <div className={cl.containerProductOptions}>
+          <h2>
+            {product?.title}
+          </h2>
+          <div className={cl.containerProductImg}>
+            <img src={product.image}/>
+          </div>
+          <h4>
+            {product?.description}
+          </h4>
+          <AdjustOrder 
+            measurement={product.measurement} 
+            incrementOrder={incrementOrder} 
+            decrementOrder={decrementOrder} 
+            incrementOrder2={incrementOrder2}
+            orderAmount={orderAmount}
+            />
+            
+          <h6>
+            Доступный остаток {orderRest + ' ' + product.measurement}
+          </h6>
+        </div>
     </div>
     )
 }

@@ -11,7 +11,9 @@ export default function Header() {
     
     <div
         className={cl.title}
-        >Щегловский Бройлер</div>
+        >Щегловский Бройлер
+    </div>
+    
     <div className={cl.imgHeaderContainer}>
         <img src={flower} alt='flower'/>
     </div>

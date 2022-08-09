@@ -18,10 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#725430;
+    /* background-color:#725430; */
+    background-color:transparent;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:bolder;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     border-radius: 2rem;
-    color: antiquewhite;
+    color: rgb(48, 35, 2);
 }

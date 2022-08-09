@@ -9,3 +9,40 @@
     background-color: aliceblue;
 }
 
+
+
+.containerProductOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerProductOptions h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.containerProductOptions h4{
+    font-size: smaller;
+    display: flex;
+    justify-content: center;   
+    margin-top: 5px; 
+}
+
+
+.containerProductOptions h6{
+    display: flex;
+    justify-content: center;   
+    margin-top: 5px; 
+}
+
+.containerProductImg {
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerProductImg img{
+    height: 100px;
+    width: 100px;
+}
