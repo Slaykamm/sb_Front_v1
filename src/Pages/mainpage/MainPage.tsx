@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import Footer from '../../components/footer/Footer'
+import Header from '../../components/header/Header'
 import Menu from '../../components/menu/Menu'
 import NavPanel from '../../components/NavPanel/NavPanel'
 import Product from '../../components/Products/Product/product'
@@ -14,31 +16,27 @@ export default function MainPage() {
 
 
   return (
-    <div
-      className={cl.MainLayer}
-    >
-      <NavPanel/>
-    
-      <div className={cl.container}>
+    <>
+      <Header/>
+        <div
+          className={cl.MainLayer}
+        >
+          <NavPanel/>
+          <div className={cl.container}>
+            <div className={cl.containerMenu}>
+              <Menu/>
+            </div>
 
-        <div className={cl.containerMenu}>
-          <Menu/>
+            <div>
+            </div>
+            <div className={cl.containerContent}>
+              <Products/>
+
+            </div>
+          </div>
         </div>
-
-        <div>
-          
-        </div>
-
-        <div className={cl.containerContent}>
-          <Products/>
-
-        </div>
-        
-        
-        
-      </div>
-
-    </div>
+      <Footer/>
+    </>
 
   )
 }

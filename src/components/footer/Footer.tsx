@@ -12,7 +12,7 @@ export default function Footer() {
       
       <div
           className={cl.info}
-          > 
+          > <div>----- </div>
             <div>WebDesign: Slaykam Studio (c) </div>
             <div>Contact: destpoch@mail.ru</div>  
       </div>
