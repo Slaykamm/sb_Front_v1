@@ -6,7 +6,10 @@
 
 .background {
     height: 100rem;
-    background-image: url('./Pages/mainpage/assets/b3.jpg');
+    background-image: url('./Pages/mainpage/assets/13.jpg');
     background-repeat: 'no-repeat';
-    background-size:260rem;
+    background-size:cover;
+    height: 100vh;
+    overflow:overlay;
+
 }; 

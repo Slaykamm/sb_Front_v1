@@ -29,8 +29,8 @@
     font-size: 1.8rem;
 }
 .adjustOrder span:hover {
-    font-weight: bold;
     cursor:pointer;
+    color:red;
 }
 
 
