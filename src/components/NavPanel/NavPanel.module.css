@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+.NavPanelContainerLink {
+    text-decoration: none;
+}
+
 .NavPanelContainerPosition span{
     display: flex;
     justify-content: center;
@@ -29,5 +33,5 @@
 }
 
 .NavPanelContainer span:hover{
-    font-weight: bold;
+    color: blueviolet;
 }

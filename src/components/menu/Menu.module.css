@@ -30,6 +30,8 @@
 }
 
 
+
+
 .containerMenuMember {
     margin-top: 30px;
     display: flex;
@@ -41,8 +43,12 @@
     cursor: pointer;
     color: black;
     border: 1px solid transparent;
+
 }
 
+.containerMenuMemberLink {
+    text-decoration: none;
+}
 
 .containerMenuMember:hover {
     background-color: white;

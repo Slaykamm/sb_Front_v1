@@ -1,0 +1,22 @@
+.MainLayer {
+    padding-top: 5rem;
+  
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(15%,17%) minmax(2%,2%) minmax(75%,77%);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.BacketMainContent {
+    height: 50vh;
+    width: 90%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: 1px solid rgb(136, 15, 15);
+}

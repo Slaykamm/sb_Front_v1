@@ -7,6 +7,7 @@ import {
   } from 'react-router-dom';
 import Backet from './Pages/basket/Backet';
 import MainPage from './Pages/mainpage/MainPage';
+import UserCabinet from './Pages/UserCabinet/UserCabinet';
 
 
 export default function AppRouter() {
@@ -16,6 +17,8 @@ export default function AppRouter() {
       <Route path='/' element={<Navigate replace to={'/main'}/>}/>
       <Route path={'/main'} element={<MainPage/>}/>
       <Route path={'/backet'} element={<Backet/>}/>
+      <Route path={'/userCabinet'} element={<UserCabinet/>}/>
+      
     </Routes>
   </Router>
   )
