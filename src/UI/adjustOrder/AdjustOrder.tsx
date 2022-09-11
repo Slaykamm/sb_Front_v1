@@ -22,21 +22,19 @@ export default function AdjustOrder(
 
  // TODO анимация на + - 
   return (
+    <div className={cl.adjustOrder}>
+      <div style={{display: 'flex', justifyContent: 'Center'}}>
+      <span onClick={() => decrementOrder()}>-</span> 
+      <input onChange={()=>incrementOrder2()} disabled value={orderAmount+' ' + measurement }/>
+      <span onClick={() => incrementOrder()}>+</span> 
+      </div>
 
-      <div className={cl.adjustOrder}>
-        <div style={{display: 'flex', justifyContent: 'Center'}}>
-
-        <span onClick={() => incrementOrder()}>+</span> 
-        <input onChange={()=>incrementOrder2()} disabled value={orderAmount+' ' + measurement }/>
-        <span onClick={() => decrementOrder()}>-</span> 
-        </div>
-
-        <div style={{display: 'flex', justifyContent: 'Center'}}>
-          <Button
-            variant="secondary" 
-            size="sm"
-            className={cl.BtnOrder}>Добавить в корзину</Button>
-        </div>
-  </div>
+      <div style={{display: 'flex', justifyContent: 'Center'}}>
+        <Button
+          variant="secondary" 
+          size="sm"
+          className={cl.BtnOrder}>Добавить в корзину</Button>
+      </div>
+    </div>
   )
 }
