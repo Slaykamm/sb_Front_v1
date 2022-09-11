@@ -14,9 +14,50 @@
     height: 50vh;
     width: 90%;
     background-color: antiquewhite;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
     border: 1px solid rgb(136, 15, 15);
 }
+
+.userInfoLayer {
+    display: grid;
+    grid-template-columns: minmax(35%,37%) minmax(2%,2%) minmax(55%,57%);
+    grid-template-rows: auto;
+    margin: 5%;
+
+}
+
+.userInfoLayerPhotoSection {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 14rem 3rem;
+}
+
+.userInfoLayerPhotoSectionImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem; 
+}
+
+.userInfoLayerPhotoSectionImgContainer img {
+    height: 13rem;
+}
+
+.userInfoLayerPhotoSectionChangeAvatarButton {
+    display: flex;
+    justify-content: center;
+
+}
+
+.userInfoLayerUserSection {
+    width: 100%;
+
+}
+
+.userInfoLayerUserSectionAccountInfo {
+    display: grid;
+    grid-template-rows: 13rem auto;
+}
+

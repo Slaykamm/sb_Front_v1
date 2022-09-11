@@ -7,6 +7,7 @@ export default function Menu() {
     <div className={cl.containerMenu}>
 
         <div className={cl.containerMenuTitle}>Меню</div>
+        <div className={cl.containerMenuMember}>Администрирование</div>
         <Link to='/main' className={cl.containerMenuMemberLink}>
           <div className={cl.containerMenuMember}>Главная</div>
         </Link>
