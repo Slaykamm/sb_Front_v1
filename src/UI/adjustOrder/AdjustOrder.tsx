@@ -1,7 +1,6 @@
 import React from 'react'
+import { Button } from '../buttons/Button'
 import cl from './AdjustOrder.module.css'
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface IproductAdjustmentProps {
   measurement: string
@@ -25,7 +24,7 @@ export default function AdjustOrder(
     <div className={cl.adjustOrder}>
       <div style={{display: 'flex', justifyContent: 'Center'}}>
       <span onClick={() => decrementOrder()}>-</span> 
-      <input onChange={()=>incrementOrder2()} disabled value={orderAmount+' ' + measurement }/>
+      <input onChange={()=> incrementOrder2()} disabled value={orderAmount+' ' + measurement }/>
       <span onClick={() => incrementOrder()}>+</span> 
       </div>
 

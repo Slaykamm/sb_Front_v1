@@ -1,14 +1,14 @@
 import React from 'react'
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
-import Menu from '../../components/menu/Menu'
-import NavPanel from '../../components/NavPanel/NavPanel'
 import cl from './UserCabinet.module.css'
-import userPhoto from './Assets/userPhoto.jpg'
-import Button from 'react-bootstrap/Button';
+import userPhoto from '../Assets/userPhoto.jpg'
 import Accordion from 'react-bootstrap/Accordion';
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../../../components/header/Header';
+import NavPanel from '../../../components/NavPanel/NavPanel';
+import Menu from '../../../components/menu/Menu';
+import Footer from '../../../components/footer/Footer';
+import { Button } from '../../../UI/buttons/Button';
 
 export default function UserCabinet() {
   return (
@@ -116,11 +116,8 @@ export default function UserCabinet() {
 
             </div>
 
-
-
             </div>
         </div>
-
     </div>
     <Footer/>
 </>

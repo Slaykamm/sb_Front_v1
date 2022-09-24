@@ -1,7 +1,7 @@
-import cl from './App.module.css'
+import cl from './App.module.scss'
 
 import {  } from 'react-router-dom';
-import AppRouter from './AppRouter';
+import AppRouter from './router/AppRouter';
 
 function App() {
   return (

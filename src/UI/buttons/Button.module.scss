@@ -1,0 +1,19 @@
+.Btn button{
+    background-color: rgb(139, 22, 22);
+    width: auto;
+    height: 2rem;
+    box-shadow: 0 0 10px 1px rgb(29, 0, 29);
+    border: solid 1px black;
+    color: rgb(172, 149, 21);
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+button:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px 1px white;
+}
+
+button:active{
+    background-color: rgb(90, 65, 145);
+}
