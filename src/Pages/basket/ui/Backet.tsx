@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Footer from '../../../components/footer/Footer'
 import Header from '../../../components/header/Header'
 import Menu from '../../../components/menu/Menu'
 import NavPanel from '../../../components/NavPanel/NavPanel'
 import cl from './Backet.module.css'
 
-export default function Backet() {
+export interface BacketProps {
+  props?: string
+}
+
+const Backet: FC<BacketProps> = (props: BacketProps) => {
   return (
     <>
         <Header/>
@@ -37,3 +41,5 @@ export default function Backet() {
     </>
   )
 }
+
+export default Backet

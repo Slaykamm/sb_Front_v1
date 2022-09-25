@@ -1,6 +1,5 @@
-import UserCabinet from "./ui/UserCabinet";
-
+import UserCabinet from './ui/UserCabinet'
 
 export {
-    UserCabinet,
+  UserCabinet
 }

@@ -2,7 +2,7 @@
 import cl from './NavPanel.module.css'
 import { Link } from 'react-router-dom'
 
-export default function NavPanel() {
+export default function NavPanel () {
   return (
     <div className={cl.MainLayer}>
         <div className={cl.NavPanelContainer}>
@@ -20,7 +20,6 @@ export default function NavPanel() {
 
         </div>
     </div>
-
 
   )
 }

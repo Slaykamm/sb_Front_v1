@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { FC } from 'react'
 import cl from './UserCabinet.module.css'
 import userPhoto from '../Assets/userPhoto.jpg'
-import Accordion from 'react-bootstrap/Accordion';
-import Table from 'react-bootstrap/Table';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../../../components/header/Header';
-import NavPanel from '../../../components/NavPanel/NavPanel';
-import Menu from '../../../components/menu/Menu';
-import Footer from '../../../components/footer/Footer';
-import { Button } from '../../../UI/buttons/Button';
+import Accordion from 'react-bootstrap/Accordion'
+import Table from 'react-bootstrap/Table'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from '../../../components/header/Header'
+import NavPanel from '../../../components/NavPanel/NavPanel'
+import Menu from '../../../components/menu/Menu'
+import Footer from '../../../components/footer/Footer'
+import { Button } from '../../../UI/buttons/Button'
 
-export default function UserCabinet() {
+export interface UserCabinetProps {
+  id?: string
+}
+export const UserCabinet: FC<UserCabinetProps> = (props: UserCabinetProps) => {
   return (
     <>
     <Header/>
@@ -34,7 +37,7 @@ export default function UserCabinet() {
                 </div>
                 <div className={cl.userInfoLayerPhotoSectionChangeAvatarButton}>
                   <Button
-                    variant="secondary" 
+                    variant="secondary"
                     size="sm"
                   >Сменить аватар</Button>
                 </div>
@@ -53,13 +56,13 @@ export default function UserCabinet() {
                     <input placeholder='Ваш новый пароль'/>
                     <p></p>
                     <Button
-                      variant="secondary" 
+                      variant="secondary"
                       size="sm">
                         Сменить пароль
                     </Button>
                   </form>
                 </div>
-                <div style={{backgroundColor: 'red'}}>
+                <div style={{ backgroundColor: 'red' }}>
                   <Accordion>
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>Предыдущие заказы</Accordion.Header>
@@ -113,7 +116,6 @@ export default function UserCabinet() {
 
               </div>
 
-
             </div>
 
             </div>
@@ -123,3 +125,5 @@ export default function UserCabinet() {
 </>
   )
 }
+
+export default UserCabinet

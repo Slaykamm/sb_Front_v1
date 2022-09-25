@@ -1,22 +1,21 @@
 import { FC } from 'react'
-import {ButtonProps} from "react-bootstrap";
+import { ButtonProps } from 'react-bootstrap'
 import cl from './Button.module.scss'
 
-
 export const Button: FC<ButtonProps> = (props) => {
-    const {
-        children,
-        ...otherProps
-    } = props;
+  const {
+    children,
+    ...otherProps
+  } = props
 
-    return (
+  return (
         <div className={cl.Btn}>
-            <button 
+            <button
                 type='button'
                 {...otherProps}
                 >
                 {children}
             </button>
         </div>
-    )
+  )
 }

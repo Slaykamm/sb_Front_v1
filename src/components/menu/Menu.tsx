@@ -2,7 +2,7 @@ import React from 'react'
 import cl from './Menu.module.css'
 import { Link } from 'react-router-dom'
 
-export default function Menu() {
+export default function Menu () {
   return (
     <div className={cl.containerMenu}>
 
@@ -20,7 +20,5 @@ export default function Menu() {
         <div className={cl.containerMenuMember}>Как добраться</div>
         <div className={cl.containerMenuMember}>Логин/Выход</div>
     </div>
-    
-    
   )
 }

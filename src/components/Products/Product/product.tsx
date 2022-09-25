@@ -1,21 +1,18 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import AdjustOrder from '../../../UI/adjustOrder/AdjustOrder'
 import { IProduct } from '../Products'
 import cl from './product.module.css'
-
 
 export interface IproductProps {
   product: IProduct
 }
 
-
-export default function Product({product}: IproductProps) {
+export default function Product ({ product }: IproductProps) {
   const [orderAmount, setOrderAmount] = useState<number>(0)
   const [orderRest, setOrderRest] = useState<number>(product.rest)
 
-
   const incrementOrder = () => {
-    if (orderRest > 0)  {
+    if (orderRest > 0) {
       setOrderAmount(orderAmount + 1)
       setOrderRest(orderRest - 1)
     }
@@ -25,13 +22,11 @@ export default function Product({product}: IproductProps) {
     if (orderAmount > 0) {
       setOrderAmount(orderAmount - 1)
       setOrderRest(orderRest + 1)
-    }     
+    }
   }
   const incrementOrder2 = () => {
     console.log('Order Amount', orderAmount)
   }
-
-
 
   return (
     <div className={cl.containerProduct}>
@@ -45,18 +40,18 @@ export default function Product({product}: IproductProps) {
           <h4>
             {product?.description}
           </h4>
-          <AdjustOrder 
-            measurement={product.measurement} 
-            incrementOrder={incrementOrder} 
-            decrementOrder={decrementOrder} 
+          <AdjustOrder
+            measurement={product.measurement}
+            incrementOrder={incrementOrder}
+            decrementOrder={decrementOrder}
             incrementOrder2={incrementOrder2}
             orderAmount={orderAmount}
             />
-            
+
           <h6>
             Доступный остаток {orderRest + ' ' + product.measurement}
           </h6>
         </div>
     </div>
-    )
+  )
 }
